@@ -16,6 +16,6 @@ cream_target_mass = st.number_input(f"Сколько сливок целевой
 cream_output = cream(cream_fatness, milk_fatness, creamfat_target, cream_target_mass)
 st.markdown('''<h2> </h2>''', unsafe_allow_html=True)
 st.markdown('''<h2>Результаты расчетов:</h2>''', unsafe_allow_html=True)
-st.metric("Сколько тяжелых сливок лить для разбавления", f'{round(cream_output[1], 2)} КГ')
-st.metric("Сколько легких сливок лить для разбавления", f'{round(cream_output[2], 2)} КГ')
+st.metric("Сколько сливок лить для разбавления", f'{round(cream_output[1], 2)} КГ')
+st.metric("Сколько молока лить для разбавления", f'{round(cream_output[2], 2)} КГ')
 #st.metric("Проверка", round(cream_output[1], 2) + round(cream_output[2], 2))

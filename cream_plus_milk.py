@@ -9,7 +9,7 @@ st.markdown('''<a href="http://kaizen-consult.ru/"><img src='https://www.kaizen.
 st.markdown('''<h1>Приложение для опеределния жирности смеси при смешивании сливок и молока</h1>''', unsafe_allow_html=True)
 st.markdown('''<h2>Введите данные:</h2>''', unsafe_allow_html=True)
 cream_fatness = st.slider("Жирность сливок, %", 33, 50, 45, 1)
-milk_fatness = st.slider("Жирность молока, %", 0, 5, 3.2, 0.2)
+milk_fatness = st.slider("Жирность молока, %", 0.0, 5.0, 3.2, 0.2)
 creamfat_target = st.slider("Целевое значение жирности сливок, %", 35, 54, 41, 1)
 cream_target_mass = st.number_input(f"Сколько сливок целевой жирности нужно получить, кг", value=200)
 
